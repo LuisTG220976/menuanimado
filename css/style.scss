@@ -40,6 +40,10 @@ body{
                     color: #fff;
                     transition-delay: 0.25s;
                 }
+                .title{
+                    transform: scale(1);
+                    transition-delay: 0.25s;
+                }
             }    
             &::before{
                 content: "";
@@ -62,8 +66,25 @@ body{
                 transition: 0.5s;
                 filter:blur(15px);
                 z-index: -1;
-                
-
+                opacity: 0;
+            }
+            ion-icon{
+                color: #777;
+                font-size: 1.75em;
+                transition: 0.5s;
+                transition-delay: 0.25s;
+            }
+            span{
+                position: absolute;
+            }
+            .title{
+                color: #fff;
+                font-size: 1.1em;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                transform: scale(0);
+                transition: 0.5s;
+                transition-delay: 0s;
             }        
 
         }
